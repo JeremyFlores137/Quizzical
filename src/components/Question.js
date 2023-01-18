@@ -30,6 +30,7 @@ export default function Question(props){
         if(!showAnswers){
             setShowAnsers(prevState => !prevState)}
         else{
+            setScore(0)
             window.location.reload() 
         }
     }
