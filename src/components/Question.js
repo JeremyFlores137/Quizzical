@@ -26,15 +26,14 @@ export default function Question(props){
             })
         }
         )
-        setScore(sco)
         if(!showAnswers){
+            setScore(sco)
             setShowAnsers(prevState => !prevState)}
         else{
             setScore(0)
             window.location.reload() 
         }
     }
-    
     const list = props.quest.map((ele, index) => {
         //array of alternatives
         //const base= [ele.answers[0], ele.answers[1], ele.answers[2], ele.answers[3]]
